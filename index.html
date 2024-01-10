@@ -1,41 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <a href="#"><img src="" alt="logo" width="66" heigh="52"></a>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </header>
-   <section class="subscribe">
-    <div class="conteiner subscribe-conteiner">
-        <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
-        <p class="subscribe-description">Order now and receive 10% off your first meal with Enjoy Your Favorite Food From Anywhere. </p>
-        <form class="subscribe-form"> 
-            <label class="subscribe-label">
-            <input type="email" placeholder="Enter your email" name="mail" class="subscribe-input" >
-        </label>
-        <button type="submit" class="subscribe-button">Subscribe</button>
-    </form>
-        <img src="./img/banan.png" alt="banan" width="608" height="266" class="subscribe-img">
-    </div>
-   </section>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo" href="#"
+          ><img src="./img/logo.svg" alt="logo" width="66" heigh="52"
+        /></a>
+        <nav class="navigation">
+          <ul class="header-list">
+            <li><a class="nav-link" href="">Home</a></li>
+            <li><a class="nav-link" href="">About</a></li>
+            <li><a class="nav-link" href="">Service</a></li>
+            <li><a class="nav-link" href="">Menu</a></li>
+            <li><a class="nav-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="header-btn button">Order Now</button>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg width="28" height="28">
+            <use href="./img/icons.svg#icon-gg_menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-container" data-menu>
+        <button class="menu-close-btn" data-menu-close>
+          <svg class="menu-close-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-   
-</body>
+        <ul class="menu-list">
+          <li><a href="" class="menu-link static">Home</a></li>
+          <li><a href="" class="menu-link">About</a></li>
+          <li><a href="" class="menu-link">Service</a></li>
+          <li><a href="" class="menu-link">Menu</a></li>
+          <li><a href="" class="menu-link">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+          <p class="hero-text">
+            With just a few clicks, you can have your favorite meals delivered
+            straight to your doorstep, no matter where you are. Order now and
+            enjoy a hassle-free and delicious meal from the comfort of your own
+            home.
+          </p>
+          <button type="button" class="button">Order Now</button>
+          <div class="border-img">
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/hero-desk-1x.png 1x, ./img/hero-desk-2x.png 2x"
+                type="image/jpg"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/hero-tab-1x.png 1x, ./img/hero-tab-2x.png 2x"
+                type="image/jpg"
+              />
+
+              <img
+                class="card-img"
+                src="./img/hero-desk-1x.png"
+                alt="Salad"
+                width="528"
+                height="528"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="offering">
+        <div class="container offering-container">
+          <picture class="offering-img">
+            <!-- Desktop screen -->
+            <source
+              media="(min-width: 1158px)"
+              srcset="./img/Apple-desk-1x.png 1x, ./img/Apple-desk-2x.png 2x"
+              type="image/png"
+            />
+            <!-- Tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/Apple-tab-1x.png 1x, ./img/Apple-tab-2x.png 2x"
+              type="image/png"
+            />
+            <!-- Mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/Apple-mob-1x.png 1x, ./img/Apple-mob-2x.png 2x"
+              type="image/png"
+            />
+            <img
+              src="./img/Apple-desk-1x.png"
+              alt="Apple"
+              width="450"
+              height="294"
+              loading="lazy"
+            />
+          </picture>
+          <div class="offering-text-wrap">
+            <h2 class="section-title offering-title">
+              What’s Special About Our Offerings
+            </h2>
+            <p class="offering-text">
+              With our platform, you can browse through a diverse selection of
+              cuisines and local restaurants, and choose from a variety of
+              dishes that cater to your specific taste buds.
+            </p>
+            <ul class="offering-list">
+              <li class="offering-item">
+                <svg class="offering-icon" width="32" height="32">
+                  <use href="./img/icons.svg#icon-rocket"></use>
+                </svg>
+                <h3 class="offering-subtitle">Fasest Delivery</h3>
+                <p class="offering-description">
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
+                </p>
+              </li>
+              <li class="offering-item">
+                <svg class="offering-icon" width="32" height="32">
+                  <use href="./img/icons.svg#icon-touch"></use>
+                </svg>
+                <h3 class="offering-subtitle">Easy to order</h3>
+                <p class="offering-description">
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order
+                  in just a few clicks.
+                </p>
+              </li>
+            </ul>
+            <button type="button" class="button offering-btn">Order Now</button>
+            <a href="" class="offering-link"
+              >Read more
+              <svg class="offering-link-icon" width="14" height="14">
+                <use href="./img/icons.svg#icon-Down"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <div class="container menu-container">
+          <h2 class="menu-title">Some of Our Favorites</h2>
+          <p class="menu-text">Looking for something delicious?</p>
+          <ul class="menu-list-img">
+            <li class="menu-item-img">
+              <div class="border-img-menu">
+                <img
+                  class="menu-img"
+                  srcset="
+                    ./img/gamburger-desk-1x.png 1x,
+                    ./img/gamburger-desk-2x.png 2x
+                  "
+                  alt="gamburger"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="menu-item-img">
+              <div class="border-img-menu">
+                <img
+                  class="menu-img"
+                  srcset="
+                    ./img/Pasta-desk-1x.png 1x,
+                    ./img/Pasta-desk-2x.png 2x
+                  "
+                  alt="Pasta"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="menu-item-img">
+              <div class="border-img-menu">
+                <img
+                  class="menu-img"
+                  srcset="
+                    ./img/pizza-desk-1x.png 1x,
+                    ./img/pizza-desk-2x.png 2x
+                  "
+                  alt="gamburger"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="menu-item-img">
+              <div class="border-img-menu">
+                <img
+                  class="menu-img"
+                  srcset="
+                    ./img/chicken-desk-1x.png 1x,
+                    ./img/chicken-desk-2x.png 2x
+                  "
+                  alt="chicken"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="menu-item-img">
+              <div class="border-img-menu">
+                <img
+                  class="menu-img"
+                  srcset="
+                    ./img/salat-desk-1x.png 1x,
+                    ./img/salat-desk-2x.png 2x
+                  "
+                  alt="salat"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="menu-item-img">
+              <div class="border-img-menu">
+                <img
+                  class="menu-img"
+                  srcset="
+                    ./img/borshch-desk-1x.png 1x,
+                    ./img/borshch-desk-2x.png 2x
+                  "
+                  alt="borshch"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+          </ul>
+
+          <!-- Desktop screen -->
+          <!-- <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./img/-gamburger-desk-1x.png 1x,
+                      ./img/gamburger-desk-2x.png  2x
+                    "
+                    type="image/png"
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./img/Pasta-desk-1x.png 1x,
+                      ./img/Pasta-desk-2x.png 2x
+                    "
+                    type="image/png"
+                  /> -->
+        </div>
+      </section>
+    </main>
+    <!-- <section class="subscribe">
+      <div class="conteiner subscribe-conteiner">
+        <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+        <p class="subscribe-description">
+          Order now and receive 10% off your first meal with Enjoy Your Favorite
+          Food From Anywhere.
+        </p>
+        <form class="subscribe-form">
+          <label class="subscribe-label">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="mail"
+              class="subscribe-input"
+            />
+          </label>
+          <button type="submit" class="subscribe-button">Subscribe</button>
+        </form>
+        <img
+          src="./img/banan.png"
+          alt="banan"
+          width="608"
+          height="266"
+          class="subscribe-img"
+        />
+      </div>
+    </section> -->
+    <script src="./js/foodSta.js"></script>
+  </body>
 </html>
