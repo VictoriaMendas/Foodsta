@@ -28,14 +28,17 @@
         /></a>
         <nav class="navigation">
           <ul class="header-list">
-            <li><a class="nav-link" href="">Home</a></li>
-            <li><a class="nav-link" href="">About</a></li>
-            <li><a class="nav-link" href="">Service</a></li>
-            <li><a class="nav-link" href="">Menu</a></li>
-            <li><a class="nav-link" href="">Contact</a></li>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#service">Service</a></li>
+            <li><a class="nav-link" href="#menu">Menu</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <button type="button" class="header-btn button">Order Now</button>
+        <!--  -->
+    
+        <button type="button" class="header-btn button " >Order Now</button>
+   
         <button type="button" class="menu-open-btn" data-menu-open>
           <svg width="28" height="28">
             <use href="./img/icons.svg#icon-gg_menu"></use>
@@ -59,7 +62,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container hero-container">
           <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
           <p class="hero-text">
@@ -78,9 +81,9 @@
                 type="image/jpg"
               />
               <!-- Tablet screen -->
-              <source
+              <source class="img-salad"
                 media="(min-width: 768px)"
-                srcset="./img/hero-tab-1x.png 1x, ./img/hero-tab-2x.png 2x"
+                srcset="./img/salat2-tab-1x.png 1x, ./img/salat2-tab-2x.png 2x"
                 type="image/jpg"
               />
 
@@ -96,7 +99,7 @@
           </div>
         </div>
       </section>
-      <section class="offering">
+      <section class="offering" id="about">
         <div class="container offering-container">
           <div>
           <picture class="offering-img">
@@ -168,7 +171,7 @@
           </div>
         </div>
       </section>
-      <section class="menu">
+      <section class="menu" id="menu">
         <div class="container menu-container">
           <h2 class="menu-title section-title" >Some of Our Favorites</h2>
           <p class="menu-text menu-text-mob">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -427,7 +430,7 @@
           </div>
         </div>
       </section>
-      <section class="customers">
+      <section class="customers" id="service">
         <div class="container">
           <h2 class="customer-title section-title">What our Customers Say</h2>
           <p class="customer-text">Don't just take our word for it - see what our satisfied customers have to say</p>
@@ -509,7 +512,7 @@
         </div :>
       </section>
    
-    <section class="subscribe">
+    <section class="subscribe" id="contact">
       <div class="container subscribe-conteiner">  <img
           src="./img/banan.png"
           alt="banan"
